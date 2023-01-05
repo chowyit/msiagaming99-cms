@@ -24,6 +24,13 @@ export default {
       validation: (Rule: {required: () => any}) => Rule.required(),
     },
     {
+      name: 'videoBanner',
+      title: 'Video Banner',
+      type: 'array',
+      of: [{type: 'reference', to: [{type: 'productVideo'}]}],
+      validation: (Rule: {required: () => any}) => Rule.required(),
+    },
+    {
       name: 'active',
       title: 'Active',
       type: 'boolean',

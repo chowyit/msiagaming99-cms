@@ -4,7 +4,7 @@ import gameCategory from './gameCategory'
 import homepage from './homepage'
 import product from './product'
 import topBanner from './topBanner'
-import videoBanner from './videoBanner'
+import productVideo from './productVideo'
 
 export const schemaTypes = [
   gameCategory,
@@ -13,5 +13,5 @@ export const schemaTypes = [
   homepage,
   product,
   topBanner,
-  videoBanner,
+  productVideo,
 ]
