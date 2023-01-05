@@ -20,7 +20,10 @@ export default {
       type: 'array',
       of: [{type: 'reference', to: [{type: 'categoryBannerType'}]}],
       hidden: ({document}: any) => !document.hasMenu,
-      validation: (Rule: {required: () => any}) => Rule.required(),
+      validation: (Rule: {max: (arg0: number) => any; required: () => any}) => {
+        Rule.max(8)
+        Rule.required()
+      },
     },
     {
       name: 'games',
@@ -28,8 +31,7 @@ export default {
       type: 'array',
       of: [{type: 'reference', to: [{type: 'product'}]}],
       hidden: ({document}: any) => document.hasMenu,
-      validation: (Rule: {max: (arg0: number) => any; required: () => any}) => {
-        Rule.max(8)
+      validation: (Rule: {required: () => any}) => {
         Rule.required()
       },
     },
