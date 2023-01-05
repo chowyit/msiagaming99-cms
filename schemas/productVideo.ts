@@ -1,6 +1,6 @@
 export default {
-  name: 'videoBanner',
-  title: 'Video Banner',
+  name: 'productVideo',
+  title: 'Product Video',
   type: 'document',
   fields: [
     {
@@ -9,8 +9,8 @@ export default {
       type: 'string',
     },
     {
-      name: 'videos',
-      title: 'Videos',
+      name: 'video',
+      title: 'Video',
       type: 'mux.video',
     },
   ],
