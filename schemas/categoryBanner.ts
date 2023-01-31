@@ -4,6 +4,12 @@ export default {
   type: 'document',
   fields: [
     {
+      name: 'id',
+      title: 'Id',
+      type: 'string',
+      description: 'Please enter same as Banner Title without space',
+    },
+    {
       name: 'bannerTitle',
       title: 'Banner Title',
       type: 'string',
