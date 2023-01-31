@@ -10,6 +10,13 @@ export default {
       validation: (Rule: {required: () => any}) => Rule.required(),
     },
     {
+      name: 'category',
+      title: 'Game Category',
+      type: 'array',
+      of: [{type: 'reference', to: [{type: 'gameCategory'}]}],
+      description: 'Configuration for options in Navigation Bar',
+    },
+    {
       name: 'topBanners',
       title: 'Top Banners',
       type: 'array',
