@@ -9,6 +9,20 @@ export default {
       type: 'string',
     },
     {
+      name: 'spotlightA',
+      title: 'Spotlight 1',
+      type: 'reference',
+      to: {type: 'product'},
+      validation: (Rule: {required: () => any}) => Rule.required(),
+    },
+    {
+      name: 'spotlightB',
+      title: 'Spotlight 2',
+      type: 'reference',
+      to: {type: 'product'},
+      validation: (Rule: {required: () => any}) => Rule.required(),
+    },
+    {
       name: 'games',
       title: 'Games',
       type: 'array',
